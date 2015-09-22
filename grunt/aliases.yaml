@@ -1,0 +1,22 @@
+default:
+  - 'css'
+
+css:
+  - 'sass:default'
+  - 'autoprefixer'
+  - 'combine_mq:default'
+  - 'replace:line_after_brace'
+  - 'replace:line_after_docblock'
+  - 'csscomb'
+
+release:
+  - 'replace:version_style'
+  - 'replace:version_functions'
+
+  - 'css'
+
+  - 'makepot'
+
+  - 'clean:release'
+  - 'copy:release'
+  - 'compress:release'
