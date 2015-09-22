@@ -21,6 +21,5 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
 /**
- * DO NOT USE @import TO INCLUDE PARENT THEME STYLESHEET.
- * IT IS INCLUDED IN functions.php
+ * DO NOT USE @import TO INCLUDE PARENT THEME STYLESHEET. IT IS INCLUDED IN functions.php
  */

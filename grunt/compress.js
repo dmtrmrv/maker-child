@@ -13,7 +13,7 @@ module.exports = {
 			'!./.csscomb.json',
 			'!./Gruntfile.js',
 			'!./grunt/**',
-			'!./sass/**',
+			// '!./sass/**',
 			'!./fonts/fontello/css/fontello-*.css',
 			'!./fonts/fontello/css/animation.css',
 			'!./fonts/fontello/config.json',
