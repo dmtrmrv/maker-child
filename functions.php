@@ -8,13 +8,18 @@
 /**
  * The current version of the theme.
  */
-define( 'MAKER_CHILD_VERSION', '0.1.1' );
+define( 'MAKER_CHILD_VERSION', '0.1.0' );
 
 /**
  * Enqueue scripts and styles.
  */
 function maker_child_scripts() {
-	// Load parent theme styles.
+	/*
+	 * Parent Theme Styles.
+	 *
+	 * Comment out or remove completely if you don't need parent theme styles
+	 * and want to create your own custom CSS from scratch.
+	 */
 	wp_enqueue_style(
 		'maker-style',
 		get_template_directory_uri() . '/style.css',
@@ -22,10 +27,22 @@ function maker_child_scripts() {
 		MAKER_CHILD_VERSION
 	);
 
-	// Load child theme styles.
+	/**
+	 * Child Theme Styles.
+	 */
 	wp_enqueue_style(
 		'maker-child-style',
 		get_stylesheet_uri(),
+		array(),
+		MAKER_CHILD_VERSION
+	);
+
+	/**
+	 * Child Theme JavaScript.
+	 */
+	wp_enqueue_script(
+		'maker_child_scripts',
+		get_stylesheet_directory_uri() . '/assets/js/project.js',
 		array(),
 		MAKER_CHILD_VERSION
 	);

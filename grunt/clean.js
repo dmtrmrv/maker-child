@@ -4,5 +4,5 @@ module.exports = {
 	},
 	release: {
 		src: '../build/'
-	},
+	}
 }

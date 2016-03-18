@@ -1,7 +1,8 @@
 {
 	"name": "maker-child",
 	"fullname": "Maker Child",
-	"version": "0.1.1",
+	"constant": "MAKER_CHILD",
+	"version": "0.1.0",
 	"devDependencies": {
 		"grunt":                  "^0.4.5",
 		"grunt-autoprefixer":     "^3.0.0",

@@ -1,7 +1,7 @@
 module.exports = {
 	// Add empty lines after curly braces.
 	line_after_brace: {
-		src: [ 'style.css', 'editor-style.css' ],
+		src: [ 'style.css', 'assets/css/editor-style.css' ],
 		overwrite: true,
 		replacements: [ {
 			from: /\}\n(?!\n)(?!\})|\}(?=.)/g,
@@ -13,7 +13,7 @@ module.exports = {
 
 	// Add empty lines after DocBlocks and comments.
 	line_after_docblock: {
-		src: [ 'style.css', 'editor-style.css' ],
+		src: [ 'style.css', 'assets/css/editor-style.css' ],
 		overwrite: true,
 		replacements: [ {
 			from: /\*\/\n(?!\n)|\*\/(?=.)/g,
@@ -31,7 +31,19 @@ module.exports = {
 		overwrite: true,
 		replacements: [ {
 			from: /Version:.*$/m,
-			to: 'Version: <%= package.version %>'
+			to:   'Version:     <%= package.version %>' // Exactly 5 spaces.
+		} ]
+	},
+
+	// Replace theme version in README.txt
+	version_readme: {
+		src: [
+			'README.txt',
+		],
+		overwrite: true,
+		replacements: [ {
+			from: /Version:.*$/m,
+			to:   'Version:           <%= package.version %>' // Exactly 11 spaces.
 		} ]
 	},
 
@@ -42,8 +54,9 @@ module.exports = {
 		],
 		overwrite: true,
 		replacements: [ {
-			from: /^define\( 'MAKER_CHILD_VERSION'.*$/m,
-			to: 'define( \'MAKER_CHILD_VERSION\', \'<%= package.version %>\' );'
+			from: /define\(.*(?=\_VERSION\',\s*\'\d\.\d\.\d\'\s*\)\;).*$/m,
+			to:   'define( \'<%= package.constant %>_VERSION\', \'<%= package.version %>\' );'
 		} ]
 	}
+
 }

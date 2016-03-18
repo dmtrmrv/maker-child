@@ -1,5 +1,6 @@
 default:
   - 'css'
+  - 'js'
 
 css:
   - 'sass:default'
@@ -9,11 +10,17 @@ css:
   - 'replace:line_after_docblock'
   - 'csscomb'
 
+js:
+  - 'concat:default'
+  - 'uglify:default'
+
 release:
   - 'replace:version_style'
+  - 'replace:version_readme'
   - 'replace:version_functions'
 
   - 'css'
+  - 'js'
 
   - 'makepot'
 

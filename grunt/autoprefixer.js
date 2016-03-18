@@ -8,7 +8,6 @@ module.exports = {
 	files: {
 		src: [
 			'style.css',
-			'editor-style.css'
 		]
 	}
 }
