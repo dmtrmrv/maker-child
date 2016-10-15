@@ -3,7 +3,7 @@ module.exports = {
 		options: {
 			beautify: true
 		},
-		src: 'style.css',
+		src:  'style.css',
 		dest: 'style.css'
 	}
 }

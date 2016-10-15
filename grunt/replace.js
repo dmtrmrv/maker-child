@@ -1,7 +1,7 @@
 module.exports = {
 	// Add empty lines after curly braces.
 	line_after_brace: {
-		src: [ 'style.css', 'assets/css/editor-style.css' ],
+		src: [ 'style.css' ],
 		overwrite: true,
 		replacements: [ {
 			from: /\}\n(?!\n)(?!\})|\}(?=.)/g,
@@ -13,7 +13,7 @@ module.exports = {
 
 	// Add empty lines after DocBlocks and comments.
 	line_after_docblock: {
-		src: [ 'style.css', 'assets/css/editor-style.css' ],
+		src: [ 'style.css' ],
 		overwrite: true,
 		replacements: [ {
 			from: /\*\/\n(?!\n)|\*\/(?=.)/g,
@@ -23,11 +23,9 @@ module.exports = {
 		} ]
 	},
 
-	// Replace theme version in style.scss
+	// Replace theme version in project.scss
 	version_style: {
-		src: [
-			'sass/style.scss',
-		],
+		src: [ 'assets/css/sass/project.scss' ],
 		overwrite: true,
 		replacements: [ {
 			from: /Version:.*$/m,
@@ -37,9 +35,7 @@ module.exports = {
 
 	// Replace theme version in README.txt
 	version_readme: {
-		src: [
-			'README.txt',
-		],
+		src: [ 'README.txt' ],
 		overwrite: true,
 		replacements: [ {
 			from: /Version:.*$/m,
@@ -49,9 +45,7 @@ module.exports = {
 
 	// Replace version in functions.php
 	version_functions: {
-		src: [
-			'functions.php'
-		],
+		src: [ 'functions.php' ],
 		overwrite: true,
 		replacements: [ {
 			from: /define\(.*(?=\_VERSION\',\s*\'\d\.\d\.\d\'\s*\)\;).*$/m,

@@ -4,6 +4,8 @@ module.exports = {
 	},
 	files: {
 		expand: true,
-		src: [ 'style.css' ]
+		src: [
+			'style.css'
+		]
 	}
 }

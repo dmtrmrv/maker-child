@@ -6,7 +6,7 @@ module.exports = {
 			require:   'susy'
 		},
 		files: {
-			'style.css': 'assets/css/sass/style.scss',
+			'style.css': 'assets/css/sass/project.scss',
 		}
 	}
 };
