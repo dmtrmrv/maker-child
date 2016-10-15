@@ -39,9 +39,12 @@ function maker_child_scripts() {
 
 	/**
 	 * Child Theme JavaScript.
+	 *
+	 * If your theme doesn't add any JavaScript, safely remove or comment out
+	 * this block to save one server request.
 	 */
 	wp_enqueue_script(
-		'maker_child_scripts',
+		'maker-child-scripts',
 		get_stylesheet_directory_uri() . '/assets/js/project.js',
 		array(),
 		MAKER_CHILD_VERSION
