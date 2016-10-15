@@ -16,6 +16,10 @@ Maker Child is distributed under the terms of the GNU GPLv2 or later.
 
 == Changelog ==
 
+= 0.1.3 =
+
+Fix: Ship Sass file as well
+
 = 0.1.2 =
 
 Fix: Replaced underscores with dashes in a custom JS handle
