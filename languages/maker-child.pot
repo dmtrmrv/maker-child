@@ -1,4 +1,4 @@
-# Copyright (C) 2016 Dmitry Mayorov
+# Copyright (C) 2016 ThemePatio
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
@@ -26,7 +26,7 @@ msgid "Maker Child Theme. Use it to customize Maker."
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Dmitry Mayorov"
+msgid "ThemePatio"
 msgstr ""
 
 #. Author URI of the plugin/theme
