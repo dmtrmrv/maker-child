@@ -8,7 +8,7 @@
 /**
  * The current version of the theme.
  */
-define( 'MAKER_CHILD_VERSION', '0.1.2' );
+define( 'MAKER_CHILD_VERSION', '0.1.3' );
 
 /**
  * Enqueue scripts and styles.
