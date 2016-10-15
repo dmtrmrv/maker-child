@@ -16,7 +16,6 @@ module.exports = {
 			'!./README.md',
 			'!./package.json',
 			'!./*.rej',
-			'!./assets/css/sass/**',
 			'!./assets/fonts/fontello/css/fontello-*.css',
 			'!./assets/fonts/fontello/css/animation.css',
 			'!./assets/fonts/fontello/config.json',
