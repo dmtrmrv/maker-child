@@ -22,7 +22,9 @@ msgid "https://themepatio.com/themes/maker/"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "Maker Child Theme. Use it to customize Maker."
+msgid ""
+"Maker Child Theme. Great starting point for customizing Maker. Create a "
+"better description for your child theme."
 msgstr ""
 
 #. Author of the plugin/theme
