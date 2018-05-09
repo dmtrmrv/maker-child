@@ -1,12 +1,11 @@
 module.exports = {
-	default: {
-		options: {
-			style:     'expanded',
-			sourcemap: 'none',
-			require:   'susy'
-		},
+	options: {
+		style:     'expanded',
+		sourceMap: false
+	},
+	dist: {
 		files: {
-			'style.css': 'assets/css/sass/project.scss',
+			'style.css': 'assets/css/sass/project.scss'
 		}
 	}
 };

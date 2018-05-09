@@ -3,7 +3,7 @@ default:
   - 'js'
 
 css:
-  - 'sass:default'
+  - 'sass'
   - 'autoprefixer'
   - 'combine_mq:default'
   - 'replace:line_after_brace'
